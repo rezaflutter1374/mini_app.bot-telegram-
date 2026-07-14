@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  مقادیر پیش‌فرض (برای زمانی که خارج از تلگرام در مرورگر معمولی تست می‌کنی).
+  وقتی داخل تلگرام باز شود، main.tsx این مقادیر را با تم واقعی کاربر جایگزین می‌کند
+  (که خودش هم روشن/تاریک بودن سیستم کاربر را رعایت می‌کند).
+*/
+:root {
+  --tg-bg: #ffffff;
+  --tg-secondary-bg: #f4f4f5;
+  --tg-text: #1c1c1e;
+  --tg-hint: #8e8e93;
+  --tg-link: #2563eb;
+  --tg-button: #2563eb;
+  --tg-button-text: #ffffff;
+  --tg-accent: #2563eb;
+}
+
+body {
+  background-color: var(--tg-bg);
+  color: var(--tg-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Vazirmatn, Tahoma, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* اسکرول‌بار باریک‌تر و کم‌حضورتر، هم‌راستا با ظاهر مینی‌اپ‌های تلگرام */
+::-webkit-scrollbar {
+  width: 4px;
+}
