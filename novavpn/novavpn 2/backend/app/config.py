@@ -22,4 +22,4 @@ class Settings(BaseSettings):
         return [int(x) for x in self.admin_telegram_ids.split(",") if x.strip()]
 
 
-settings = Settings()
+settings = Settings()  # type: ignore[reportCallIssue]
